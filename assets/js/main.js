@@ -1,6 +1,6 @@
 $('.card-slider').slick({
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     autoplay: true,
     arrows: false,
     dots: true,
@@ -29,7 +29,7 @@ $('.card-slider').slick({
     slidesToScroll: 1,
     autoplay: true,
     arrows: false,
-    dots: true,
+    dots: false,
     autoplaySpeed: 2000,
   });
 

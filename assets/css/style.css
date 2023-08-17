@@ -1,9 +1,21 @@
+body {
+    background-color: #f6f2ea;
+}
+
 .theme-color {
-    color:#bf925b;
+    color:#bf925b !important;
 }
 
 .bg-theme-color {
     background-color: #bf925b;
+}
+
+.bg-light-custom {
+    background-color: #ece8de;
+}
+
+.bg-dark {
+    color: #323a40 !important;
 }
 
 .border-custom-color {
@@ -12,6 +24,26 @@
 
 .btn-check:focus+.btn, .btn:focus, .form-control:focus {
     box-shadow: 0 0 0 0.25rem rgb(202 144 89 / 36%) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #bf925b;
+}
+
+.navbar-brand {
+    padding-left: 3rem;
+}
+
+#navbarNavDropdown {
+    padding-right: 3rem;
+}
+
+.container {
+    max-width: 1140px;
 }
 
 h1 {
@@ -30,8 +62,12 @@ h3 {
 }
 
 h4 {
-    font-size: 25px;
+    font-size: 24px !important;
     font-weight: 700;
+}
+
+h5 {
+    font-size: 24px !important;
 }
 
 .outline-button-custom {
@@ -48,6 +84,10 @@ h4 {
     padding: 10px 30px;
     color:#fff;
     background: #bf925b;
+}
+
+.fill-button-custom:hover {
+    color: #fff;
 }
 
 .outline-button-custom:hover {
@@ -67,8 +107,10 @@ h4 {
 .main-banner {
     background-repeat: no-repeat !important;
     background-size: cover !important;
+    background-attachment: fixed !important;
     z-index: 9999;
     position: relative;
+    background-position: 0 -200px !important;
 }
 
 .main-banner::after {
@@ -80,6 +122,10 @@ h4 {
     z-index: -1;
     background: #000000a3;
 }
+
+.main-banner main {
+    padding-top: 95px;
+} 
 
 .vh-101 {
     height: 101vh;
@@ -103,6 +149,12 @@ h4 {
     font-size: 15px;
     font-weight: 400;
 }
+
+.gx-custom {
+    margin-left: -30px; 
+    margin-right: -30px;   
+}
+
 
 .outline-wrap {
     border: 3px solid;
@@ -134,7 +186,7 @@ footer a {
     color: #fff;
     text-decoration: none;  
     font-size: 18px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 #btn-back-to-top {
@@ -147,6 +199,7 @@ footer a {
 footer a:hover {
     color: #bf925b;
 }
+
 
 
 @media (max-width:425px) {
@@ -188,5 +241,10 @@ footer a:hover {
     
     .navbar-dark .navbar-toggler {
         border-color: rgb(168 144 89);
+    }
+
+    .gx-custom {
+        margin-left: 0; 
+        margin-right: 0px;   
     }
 }
