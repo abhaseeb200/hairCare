@@ -105,12 +105,12 @@ h5 {
 }
 
 .main-banner {
-    background-repeat: no-repeat !important;
+    background-repeat: repeat !important;
     background-size: cover !important;
     background-attachment: fixed !important;
     z-index: 9999;
     position: relative;
-    background-position: 0 -200px !important;
+    background-position: 0 -150px !important;
 }
 
 .main-banner::after {
@@ -201,25 +201,36 @@ footer a:hover {
 }
 
 
+@media (max-width:1200px) {
+    .gx-custom {
+        margin-left: 0; 
+        margin-right: 0;   
+    }
 
-@media (max-width:425px) {
+    .main-banner {
+        background-position: center center !important;
+    }
+}
+
+@media (max-width:990px) {
+    .navbar-brand {
+        padding-left: 5px;
+    }
+
     h1 {
-        font-size: 40px;
+        font-size: 60px;
     }
 
     h2 {
-        font-size: 32px;
+        font-size: 50px;
     }
 
     h3 {
-        font-size: 26px;
+        font-size: 36px;
     }
 
     h4 {
-        font-size: 22px;
-    }
-    .testimony .slick-dots {
-        bottom: -40px !important;
+        font-size: 32px;
     }
 
     #navbarNavDropdown {
@@ -246,5 +257,62 @@ footer a:hover {
     .gx-custom {
         margin-left: 0; 
         margin-right: 0px;   
+    }
+    
+}
+
+@media (max-width:525px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    h5 {
+        font-size: 19px !important;
+    }
+
+    .testimony .slick-dots {
+        bottom: -40px !important;
+    }
+}
+
+@media (max-width:312px) {
+    a.navbar-brand img {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 18px !important;
+    }
+    
+    .navbar-toggler {
+        font-size: 1.0rem;
     }
 }
